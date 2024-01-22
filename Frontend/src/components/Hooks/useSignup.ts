@@ -25,7 +25,7 @@ function useSignin() {
     try {
       dispatch(loginStart());
       const response = await axios.post(
-        "http://localhost:4000/signup",
+        "https://pay2win-puce.vercel.app/signup",
         formValues
       );
 

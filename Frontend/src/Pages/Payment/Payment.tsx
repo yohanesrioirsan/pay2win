@@ -28,7 +28,7 @@ function PaymentPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/payment",
+        "https://pay2win-puce.vercel.app/payment",
         apiData
       );
       const orderIdFromResponse = response.data.order_id;

@@ -22,7 +22,7 @@ function OrderReceipt() {
     const fetchOrderId = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/payment/${order_id}`
+          `https://pay2win-puce.vercel.app/payment/${order_id}`
         );
         setOrderData(response.data as OrderData);
       } catch (error) {

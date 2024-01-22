@@ -29,7 +29,7 @@ function ProductDetail() {
     const fetchGameDetail = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/allproducts/${id}`
+          `https://pay2win-puce.vercel.app/allproducts/${id}`
         );
         setGameDetail(response.data);
       } catch (error) {
