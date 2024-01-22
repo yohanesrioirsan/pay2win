@@ -1,5 +1,5 @@
 ## About this project
-Pay2WiN (Onine games topup service) is my first full-stack project is a MERN web app for online game top-up. The curiosity about how the backend creates APIs is a strong motivation for undertaking this project. After delving deep into it, I can evaluate that although I am not quite proficient in pure JavaScript logic yet, I will continue to strive to master it.
+Pay2WiN (Onine games topup service) is my first full-stack project is a MERN web app for online game top-up. The curiosity about how the backend creates APIs is a strong motivation for undertaking this project. After delving deep into it, I can evaluate that although I am not quite proficient in pure JavaScript logic yet, I will continue to strive to master it. Besides learning about backend, APIs, and servers, I also delved deeper into front-end development and web design. Please bear with me if it's not yet perfect; this is my full-stack project, involving web design, flow, backend, frontend, etc., which has been quite a headache for me XD.
 
 ## Project Details
 <a href="https://pay2win-fe.vercel.app/">Website Demo</a>
@@ -31,3 +31,4 @@ https://pay2win-puce.vercel.app/payment/${order_id}
 
 
 Likes/stars/forks would be greatly appreciated, and feel free to use this project as an educational resource.
+For any kind of issues, bugs, or errors, please feel free to contact me. Thank you :).
