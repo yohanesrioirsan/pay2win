@@ -1,0 +1,57 @@
+footer {
+  background-color: #101c45;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container {
+  padding: 1rem 7rem;
+}
+
+.footer-container hr {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.contact h3 {
+  color: white;
+}
+
+.address h3 {
+  color: white;
+}
+
+.socials h3 {
+  color: white;
+}
+
+.socials-icon-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.socials-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5rem;
+  background-color: #101c45;
+  border: 1px solid #5494ff;
+}
+
+.btn-contact {
+  background: #101c45;
+  border-radius: 1rem;
+  color: white;
+  border: 1px solid #5494ff;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+}

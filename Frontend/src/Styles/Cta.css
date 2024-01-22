@@ -1,0 +1,25 @@
+.cta {
+  background-color: #101c45;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 7rem;
+}
+
+.cta-action {
+  width: 50%;
+  color: white;
+}
+
+.cta-action p {
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.cta-pw2-logo img {
+  width: 350px;
+  height: 230px;
+}

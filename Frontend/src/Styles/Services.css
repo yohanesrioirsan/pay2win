@@ -1,0 +1,43 @@
+.services-container {
+  background-color: #101c45;
+}
+
+.service-wrapper {
+  padding: 1rem 7rem;
+}
+
+.services-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.box {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #101c45;
+  width: 530px;
+  height: 400px;
+  border: 1px solid #5494ff;
+  border-radius: 2rem;
+}
+
+.box h2 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+
+.box p {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.icon-img img {
+  width: 100px;
+  height: 100px;
+}

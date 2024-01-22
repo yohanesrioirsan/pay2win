@@ -1,0 +1,38 @@
+.popular-container {
+  width: 100%;
+  background-color: #101c45;
+  padding: 10rem 7rem 5rem;
+}
+
+.popular h1 {
+  color: white;
+}
+
+.popular-games {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.games-container h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.games-box {
+  border-radius: 2rem;
+  margin-top: 1rem;
+  width: 200px;
+  height: 200px;
+  background-color: #101c45;
+  border: 1px solid #5494ff;
+  overflow: hidden;
+}
+
+.games-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
