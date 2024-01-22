@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -7,18 +8,11 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["https://pay2win-two.vercel.app/"],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+app.use(cors());
+app.use("/img", express.static("upload/img"));
 
 // Database Connection MongoDB
-mongoose.connect(
-  "mongodb+srv://p2w:133713371337@cluster0.4jcmvmw.mongodb.net/pay2win"
-);
+mongoose.connect(process.env.MONGODB_URI);
 
 // API
 
@@ -313,8 +307,9 @@ app.get("/payment/:order_id", async (req, res) => {
   }
 });
 
+const port = process.env.PORT || 3000;
 app.listen(port, (error) => {
   if (!error) {
-    console.log("Server is running in port" + port);
-  } else console.log("Server Error : " + error);
+    console.log("Server is running on port " + port);
+  } else console.log("Server Error: " + error);
 });
