@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import navBrand from "../../../assets/img/p2w.png";
 import "../../../Styles/NavBar.css";
 import auth from "../../../utility/auth";
 
 function NavBar() {
+  const navigate = useNavigate();
   const [isMobileOpen, setMobileOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -16,6 +18,8 @@ function NavBar() {
 
   const handleLogout = () => {
     auth.logout();
+
+    navigate("/");
   };
 
   console.log("Rendering NavBar. isLoggedIn:", isLoggedIn());
@@ -31,31 +35,29 @@ function NavBar() {
             {isLoggedIn() ? (
               <>
                 <li>
-                  <a href="/dashboard">Home</a>
+                  <a onClick={() => navigate("/dashboard")}>Home</a>
                 </li>
                 <li>
-                  <a href="/" onClick={handleLogout}>
-                    Logout
-                  </a>
+                  <a onClick={handleLogout}>Logout</a>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <a href="/">Home</a>
+                  <a onClick={() => navigate("/")}>Home</a>
                 </li>
                 <li>
-                  <a href="/">Services</a>
+                  <a href="#">Services</a>
                 </li>
                 <li>
-                  <a href="/">Products</a>
+                  <a href="#">Products</a>
                 </li>
                 <li>
-                  <a href="/">About Us</a>
+                  <a href="#">About Us</a>
                 </li>
                 <div className="contact-wrapper">
                   <li>
-                    <a href="/signin">Sign In</a>
+                    <a onClick={() => navigate("/signin")}>Sign In</a>
                   </li>
                 </div>
               </>
