@@ -9,7 +9,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors());
-app.use("/img", express.static("upload/img"));
+app.use("/img", express.static("/tmp/upload/img"));
 
 // Database Connection MongoDB
 mongoose.connect(process.env.MONGODB_URI);
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 // Image Storage
 
 const storage = multer.diskStorage({
-  destination: "./upload/img",
+  destination: "/tmp/upload/img",
   filename: (req, file, cb) => {
     return cb(
       null,
